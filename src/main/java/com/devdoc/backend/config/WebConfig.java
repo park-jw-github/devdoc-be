@@ -16,7 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         // 개발환경(localhost) & 배포환경(krampoline) - URL 주소 확인
-                        .allowedOrigins("http://localhost:3000", "https://ke9578a20ed0aa.user-app.krampoline.com")
+                        .allowedOrigins("http://localhost:3000", "https://kca0020c4ff6fa.user-app.krampoline.com")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
